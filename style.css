@@ -2,5 +2,58 @@ body{
     font-family: "comic sans ms", cursive;
     border: 1px solid black;
     border-radius: 5px;
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    
 }
+
+.converter-container {
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  input, select, button {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .tabs {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .tab {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    color: #000;
+  }
+
+  .tab.active {
+    background-color: black;
+    color: white;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
 

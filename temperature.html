@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temperature</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+     <div class="converter-container">
+        <h1>Unit Converter</h1>
+        <a class="tab active" href="length.html">Length</a>
+        <a class="tab" href="weight.html" >Weight</a>
+        <a class="tab"  href="temperature.html">temperature</a>
+        <form method="POST"> 
+          
+            <h2>Temperature Converter</h2>
+            <p>Convert between different units of temperature.</p>
     
+            <input type="number" name="value" placeholder="Enter the temperature to convert" required>
+            <select name="unit_from" required>
+                <option value="" disabled selected>Select unit to convert from</option>
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="k">Kelvin</option>
+              
+            </select>
+            <select name="unit_to" required>
+                <option value="" disabled selected>Select unit to convert to</option>
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="k">Kelvin</option>   
+            </select>
+            <div class="buttons">
+                <button type="submit">Convert</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        <h2>Results of your calculations:</h2>
+    </div>
 </body>
 </html>

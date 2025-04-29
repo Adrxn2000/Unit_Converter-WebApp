@@ -6,30 +6,43 @@
     <title>Unit Converter Web App</title>
 </head>
 <body>
-    <form method="POST"> 
+    <div class="converter-container">
         <h1>Unit Converter</h1>
-        <input type="number" name="value" placeholder="Enter the length to convert" required>
-        <select name="unit_from" required>
-            <option value="" disabled selected>Select unit to convert from</option>
-            <option value="cm">Centimeters</option>
-            <option value="m">Meters</option>
-            <option value="km">Kilometers</option>
-            <option value="in">Inches</option>
-            <option value="ft">Feet</option>
-            <option value="yd">Yards</option>
-        </select>
-        <select name="unit_to" required>
-            <option value="" disabled selected>Select unit to convert to</option>
-            <option value="cm">Centimeters</option>
-            <option value="m">Meters</option>
-            <option value="km">Kilometers</option>
-            <option value="in">Inches</option>
-            <option value="ft">Feet</option>
-            <option value="yd">Yards</option>
-        </select>
-        <button type="submit">Convert</button>
+        <a class="tab active" href="length.html">Length</a>
+        <a class="tab" href="weight.html" >Weight</a>
+        <a class="tab"  href="temperature.html">temperature</a>
+        <form method="POST"> 
+          
+            <h2>Length Converter</h2>
+            <p>Convert between different units of length.</p>
+    
+            <input type="number" name="value" placeholder="Enter the length to convert" required>
+            <select name="unit_from" required>
+                <option value="" disabled selected>Select unit to convert from</option>
+                <option value="cm">Centimeters</option>
+                <option value="m">Meters</option>
+                <option value="km">Kilometers</option>
+                <option value="in">Inches</option>
+                <option value="ft">Feet</option>
+                <option value="yd">Yards</option>
+            </select>
+            <select name="unit_to" required>
+                <option value="" disabled selected>Select unit to convert to</option>
+                <option value="cm">Centimeters</option>
+                <option value="m">Meters</option>
+                <option value="km">Kilometers</option>
+                <option value="in">Inches</option>
+                <option value="ft">Feet</option>
+                <option value="yd">Yards</option>
+            </select>
+            <div class="buttons">
+                <button type="submit">Convert</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        
         <h2>Results of your calculations:</h2>
-    </form>
+    </div>
     
 </body>
 </html>
