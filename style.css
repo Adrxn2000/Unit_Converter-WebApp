@@ -39,7 +39,6 @@ body{
   } */
 
   .tab {
-    text-decoration: underline;
     padding: 10px 20px;
     margin: 0 5px;
     color: black;
@@ -54,7 +53,8 @@ body{
   } */
 
   .tab.active{
-    background-color: blue;
+    text-decoration: underline;
+    color: blue;
   }
 
   
